@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRLS Rubik's Cube & Puzzles Club</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- You can use Google Fonts here, e.g. -->
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik|Montserrat|Poppins&display=swap"> -->
+</head>
+<body>
+  <!-- HEADER / NAVIGATION -->
+  <header>
+    <nav class="main-nav">
+      <div class="logo-area">
+        <!-- Club logo goes here -->
+        <!-- Provide your logo as a high-quality PNG or SVG for best results -->
+        <a href="index.html">
+          <img src="images/club-logo.png" alt="CRLS Cube Club Logo" class="club-logo"/>
+        </a>
+        <h1>CRLS Rubik's Cube &amp; Puzzles Club</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="leadership.html">The Leadership Team</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="competitions.html">Competitions</a></li>
+        <li><a href="whoweare.html">Who We Are</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ROTATING BANNER SECTION -->
+  <section class="banner-slideshow">
+    <!-- 
+      Each .slide will be a full-screen background image. 
+      Provide high-resolution images (JPEG or PNG, typically 1920x1080 or higher).
+      5-second interval controlled by JS.
+    -->
+    <div class="slide" style="background-image: url('images/club-group1.jpg');"></div>
+    <div class="slide" style="background-image: url('images/club-group2.jpg');"></div>
+    <div class="slide" style="background-image: url('images/club-group3.jpg');"></div>
+  </section>
+
+  <!-- CALL TO ACTION: JOIN NOW -->
+  <section class="join-section">
+    <h2>Welcome to the CRLS Rubik's Cube &amp; Puzzles Club!</h2>
+    <p>
+      [Short uplifting summary about the club, e.g. “We are a group of CRLS students 
+      who love solving puzzles, learning new methods, and sharing our passion for speedcubing.”]
+    </p>
+    <button id="joinNowBtn" class="join-btn">Join Now</button>
+
+    <!-- Pop-up Modal for Google Classroom -->
+    <div id="joinModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h3>Join Our Classroom</h3>
+        <p>
+          Only CRLS students may join the Google Classroom, due to school security policies.
+          For more information/inquiry, please email the club advisor: 
+          <a href="mailto:nwhitfield@cpsd.us">nwhitfield@cpsd.us</a>
+        </p>
+        <!-- Example link (placeholder) -->
+        <a href="#" class="google-classroom-link">Google Classroom Invite Link</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPTIONAL SPONSOR/ORGANIZATION BANNER (also used on volunteering page) -->
+  <section class="sponsor-banner">
+    <!--
+      Use relevant sponsor logos here. Each can be PNG or SVG with transparent background, 
+      displayed horizontally for a “carousel” or static line of sponsor logos.
+    -->
+    <img src="images/sponsor1.png" alt="Sponsor 1"/>
+    <img src="images/sponsor2.png" alt="Sponsor 2"/>
+    <img src="images/sponsor3.png" alt="Sponsor 3"/>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; <span id="year"></span> CRLS Rubik's Cube &amp; Puzzles Club. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
